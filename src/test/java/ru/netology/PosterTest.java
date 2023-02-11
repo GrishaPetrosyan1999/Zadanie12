@@ -10,11 +10,11 @@ public class PosterTest {
     Poster poster2 = new Poster("2", "Вперед", 2020, "http2");
     Poster poster3 = new Poster("3", "Отель Белград", 2020, "http3");
     Poster poster4 = new Poster("4", "Джентельмены", 2019, "http4");
-    Poster poster5 = new Poster("5", "Человек - неведимка", 2020, "http5");
+    Poster poster5 = new Poster("5", "Человек -неведимка", 2020, "http5");
     Poster poster6 = new Poster("6", "Тролли.Мировой тур", 2020, "http6");
     Poster poster7 = new Poster("7", "Номер один", 2020, "http7");
     Poster poster8 = new Poster("8", "Аватар", 2008, "http8");
-    Poster poster9 = new Poster("9", "Аватар 2", 2022, "http9");
+    Poster poster9 = new Poster("9", "Аватар - 2", 2022, "http9");
     Poster poster10 = new Poster("10", "Аватар 3", 2025, "http10");
     Poster poster11 = new Poster("11", "Аватар 4 ", 2027, "http11");
 
@@ -76,4 +76,6 @@ public class PosterTest {
         Poster[] actual = manager.findLast();
         Assertions.assertArrayEquals(expected, actual);
     }
+
+
 }

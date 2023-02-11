@@ -1,15 +1,15 @@
 package ru.netology;
 
 public class Poster {
-    private String Id;
-    private String Title;
-    private int ReleaseYear;
-    private String ImageUrl;
+    private String id;
+    private String title;
+    private int releaseyear;
+    private String imageurl;
 
-    public Poster(String Id, String Title, int ReleaseYear, String ImageUrl) {
-        this.Id = Id;
-        this.Title = Title;
-        this.ReleaseYear = ReleaseYear;
-        this.ImageUrl = ImageUrl;
+    public Poster(String id, String title, int releaseyear, String imageurl) {
+        this.id = id;
+        this.title = title;
+        this.releaseyear = releaseyear;
+        this.imageurl = imageurl;
     }
 }

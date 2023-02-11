@@ -2,14 +2,14 @@ package ru.netology;
 
 public class PosterManager {
     private Poster[] posters = new Poster[0];
-    private int MaxPosters = 10;
+    private int maxposters;
 
-    public PosterManager(int MaxPosters) {
-        this.MaxPosters = MaxPosters;
+    public PosterManager(int maxposters) {
+        this.maxposters = maxposters;
     }
 
     public PosterManager() {
-
+        this.maxposters = 10;
     }
 
     public void Save(Poster poster) {
@@ -26,16 +26,16 @@ public class PosterManager {
     }
 
     public Poster[] findLast() {
-        int ResultLenght;
-        if (MaxPosters >= 10) {
-            ResultLenght = 10;
+        int resultlenght;
+        if (posters.length < maxposters) {
+            resultlenght = posters.length;
         } else {
-            ResultLenght = MaxPosters;
+            resultlenght = maxposters;
         }
-        Poster[] reversed = new Poster[ResultLenght];
-        for (int i = 0; i < reversed.length; i++) {
-            reversed[i] = posters[posters.length - 1 - i];
+        Poster[] result = new Poster[resultlenght];
+        for (int i = 0; i < result.length; i++) {
+            result[i] = posters[posters.length - 1 - i];
         }
-        return reversed;
+        return result;
     }
 }
