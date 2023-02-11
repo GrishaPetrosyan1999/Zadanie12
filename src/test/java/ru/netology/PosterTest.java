@@ -76,8 +76,9 @@ public class PosterTest {
         Poster[] actual = manager.findLast();
         Assertions.assertArrayEquals(expected, actual);
     }
+
     @Test
-    public  void FindLast11(){
+    public void FindLast11() {
         manager = new PosterManager(11);
         manager.Save(poster1);
         manager.Save(poster2);
@@ -90,14 +91,15 @@ public class PosterTest {
         manager.Save(poster9);
         manager.Save(poster10);
         manager.Save(poster11);
-        Poster[] expected = {poster11, poster10, poster9, poster8, poster7,poster6, poster5, poster4,poster3, poster2, poster1};
+        Poster[] expected = {poster11, poster10, poster9, poster8, poster7, poster6, poster5, poster4, poster3, poster2, poster1};
         Poster[] actual = manager.findLast();
         Assertions.assertArrayEquals(expected, actual);
 
 
     }
+
     @Test
-    public void Film(){
+    public void Film() {
         manager = new PosterManager(11);
         manager.Save(poster1);
         manager.Save(poster2);
@@ -111,7 +113,6 @@ public class PosterTest {
 
 
     }
-
 
 
 }
